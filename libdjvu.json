@@ -14,5 +14,6 @@
       "djvu" : "img",
       "djv" : "img"
     },
-    "licence_required":false
+    "licence_required":false,
+    "using": ["solver_1"]
 }
