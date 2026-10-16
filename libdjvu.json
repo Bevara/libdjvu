@@ -1,5 +1,6 @@
 {
     "name": "libdjvu",
+    "version": "1.0.1",
     "description": "DjVu document decoder",
     "filters":["djvudec"],
     "help": "This filter renders the first page of a DjVu document to a raw image using DjVuLibre.",
