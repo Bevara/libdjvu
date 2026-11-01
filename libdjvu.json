@@ -1,6 +1,6 @@
 {
     "name": "libdjvu",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "description": "DjVu document decoder",
     "filters":["djvudec"],
     "help": "This filter renders the first page of a DjVu document to a raw image using DjVuLibre.",
@@ -15,7 +15,7 @@
       "djvu" : "img",
       "djv" : "img"
     },
-    "using": ["solver_1"],
+    "using": ["mm_solver_1.0.1"],
     "patents": {
         "status": "expired",
         "note": "DjVu",

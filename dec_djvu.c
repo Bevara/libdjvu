@@ -22,14 +22,14 @@
 #include <libdjvu/ddjvuapi.h>
 
 /* DjVuLibre signals failures by throwing, and no solver exports __cxa_throw
- * (checked on solver_1 and solver_minimal_1), so the side module would not
+ * (checked on mm_solver_1.0.1 and mm_solver_minimal_1.0.1), so the side module would not
  * instantiate without this definition. A file that makes the library throw ends
  * the module rather than coming back as an error; well formed documents never
  * reach it. Same stub as libcharls and libape.
  *
  * The rest of what this module needs - iconv, the pthread stubs, getpwuid and
- * friends - is exported by solver_1 only, which is why the test and the demo
- * use it rather than solver_minimal_1. */
+ * friends - is exported by mm_solver_1.0.1 only, which is why the test and the demo
+ * use it rather than mm_solver_minimal_1.0.1. */
 void __cxa_throw(void *thrown_exception, void *tinfo, void (*dest)(void *))
 {
 	GF_LOG(GF_LOG_ERROR, GF_LOG_CODEC, ("[DJVUDec] DjVuLibre raised an exception, aborting the module\n"));
