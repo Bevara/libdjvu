@@ -2,20 +2,28 @@
     "name": "libdjvu",
     "version": "1.0.2",
     "description": "DjVu document decoder",
-    "filters":["djvudec"],
+    "filters": [
+        "djvudec"
+    ],
     "help": "This filter renders the first page of a DjVu document to a raw image using DjVuLibre.",
     "support": [
         "image"
     ],
-    "sources":"https://bevara.ddns.net/sources/libdjvu.accessor",
-    "filter_source":{
-        "djvudec" : "dec_djvu.c"
+    "sources": "https://bevara.ddns.net/sources/libdjvu.accessor",
+    "filter_source": {
+        "djvudec": "dec_djvu.c"
     },
-    "extension":{
-      "djvu" : "img",
-      "djv" : "img"
+    "extension": {
+        "djvu": "img",
+        "djv": "img"
     },
-    "using": ["mm_solver_1.0.1", "mm_solver_1.0.2", "mm_solver_1.0.3", "mm_solver_1.0.4"],
+    "using": [
+        "mm_solver_1.0.1",
+        "mm_solver_1.0.2",
+        "mm_solver_1.0.3",
+        "mm_solver_1.0.4",
+        "mm_solver_1.0.5"
+    ],
     "patents": {
         "status": "expired",
         "note": "DjVu",
